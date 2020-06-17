@@ -5,10 +5,10 @@ class Cat {
     // write static and instance variables
 
     public Cat(String name, int age) {
-        this.name = name;
-        this.age = age;
+        this.name=name;
+        this.age=age;
         counter++;
-        if (counter > 5) {
+        if (counter>5){
             System.out.println("You have too many cats");
         }
         // implement the constructor
