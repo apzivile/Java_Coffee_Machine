@@ -1,23 +1,26 @@
-enum Secret {
-    STAR, CRASH, START;
-}
 
 public class Main {
 
     public static void main(String[] args) {
-        int count = 0;
+        Secret[] values = Secret.values();
+        int counter = 0;
 
-        Secret secret ;
-        String secrets = secret.toString();
+        String s;
 
-        if (secrets.startsWith("STAR")) {
-            count++;
+        for (int i = 0; i < values.length; i++) {
+            s = values[i].toString();
+            if (s.startsWith("STAR")) {
+                counter++;
+            }
         }
+        System.out.println(counter);
 
-
-        System.out.println(count);
     }
 }
- /*At least two constants start with STAR
 
-*/
+/* At least two constants start with STAR
+enum Secret {
+    STAR, CRASH, START, // ...
+
+}
+ */

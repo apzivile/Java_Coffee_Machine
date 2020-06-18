@@ -13,7 +13,6 @@ public class CoffeeMachine {
         action(water, milk, beans, cups, money);
     }
 
-
     public static void printLines(int water, int milk, int beans, int cups, int money) {
         System.out.println("The coffee machine has:");
         System.out.println(water + " of water");
@@ -126,8 +125,6 @@ public class CoffeeMachine {
                     System.out.println("Write action (buy, fill, take, remaining, exit)");
                     action = scanner.nextLine();
                     break;
-                case "0":
-                    System.out.println("whoopsie doopsie");
             }
         }
     }
